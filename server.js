@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const clientRoutes = require('./routes/clientRoutes'); 
-const reservationRoutes = require('./routes/reservationRoutes');
-const tableRoutes = require('./routes/tableRoutes');
+const clientRoutes = require('./route/clientRoutes'); 
+const reservationRoutes = require('./route/reservationRoutes');
+const tableRoutes = require('./route/tableRoutes');
 
 app.use('/api/reservations', reservationRoutes);
 app.use('/api/tables', tableRoutes);

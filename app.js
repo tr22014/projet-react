@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const routeClient = require('./route/clientRoutes');
-mongoose.connect('mongodb+srv://taharami22014:taharami22014@cluster0.ukrqb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://taharami22014:taharami22014@cluster0.ukrqb.mongodb.net/"nom_base_de_donnees"?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log("Connected succesfully");
 }).catch((error)=>{
